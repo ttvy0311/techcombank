@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans Symbols", sans-serif;
+  color: #616161;
+  background-color: #f5f6f8;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+}
+
+.header-top {
+  display: flex;
+  background: #f5f6f8;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px 20px;
+  padding: 0px 64px;
+  color: inherit;
+  font-size: 14px;
+  position: relative;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.header-top-left-list {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid grey;
+  padding-right: 40px;
+  gap: 10px;
+  font-weight: 550;
+}
+
+.header-top-left-discover {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.header-top-left-discover > div:first-child {
+  font-weight: 500 !important;
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-top-right-select {
+  display: flex;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.header-top-right-language {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid grey;
+  padding: 0px 20px;
+  gap: 10px;
+  font-weight: 550;
+  position: relative;
+  cursor: pointer;
+}
+.header-top-right-select a {
+  color: #616161;
+  text-decoration: none;
+  transition: 0.5s linear;
+}
+.header-top-right-select a:hover {
+  color: red;
+}
+.header-top-right-language > div {
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+.header-top-right-language > div:hover {
+  opacity: 0.7;
+}
+.language-dropdown {
+  position: absolute;
+}
+#language-dropdown {
+  position: absolute;
+  top: 140%;
+  right: 15px;
+  background-color: white;
+  padding: 0px 10px 10px 10px;
+  width: max-content;
+  display: none;
+}
+#language-dropdown.show {
+  display: block;
+}
+
+#language-dropdown li {
+  padding: 5px 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+#language-dropdown li:first-child {
+  color: red;
+}
+.language-dropdown-arrow {
+  transition: all 0.25s linear;
+}
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+  line-height: 24px;
+}
+
+.header-bottom-logo {
+  padding: 12px 0;
+  width: 232px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.header-bottom-login {
+  display: flex;
+  gap: 10px;
+  background-color: red;
+  color: white;
+  letter-spacing: 2px;
+  padding: 18px 16px 18px 20px;
+}
+
+.header-bottom-login > div:first-child {
+  font-weight: 600;
+}
+.support-client {
+  background-image: url("https://d1kndcit1zrj97.cloudfront.net/uploads/masthead_help_support_60af087ce8.png?w=1920&q=75");
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.support-client > span:first-child {
+  font-size: 32px;
+  color: black;
+  margin-left: 60px;
+}
+.main {
+  background-color: #f5f6f8;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  padding: 0 64px;
+}
+.faq-title {
+  font-size: 24px;
+  padding: 48px 0;
+}
+.faq-content {
+  display: flex;
+}
+.faq-content-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 0 0;
+  line-height: 2;
+}
+.faq-content-right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 48px 56px;
+}
+.faq-content-left > span {
+  padding: 8px 12px 8px 0;
+  line-height: 24px;
+}
+.faq-content-left-text-white {
+  background-color: black;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px !important;
+  font-weight: 550;
+}
+.alternate-1 {
+  display: flex;
+  flex-direction: column;
+}
+.alternate-1 > li {
+  list-style-type: circle;
+  margin-left: 28px;
+}
+.faq-service {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  color: black;
+}
+.faq-service-title {
+  font-size: 24px;
+  padding: 32px 0 12px 0;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.services > div {
+  display: flex;
+  border: 1px solid grey;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  height: max-content;
+}
+.footer {
+  background-color: #212121;
+  padding: 30px 64px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top-left > img {
+  height: 40px;
+  width: 280px;
+}
+.footer-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  gap: 12px;
+}
+.footer-top-right > i {
+  color: red;
+}
+.footer-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 18px;
+  line-height: 26px;
+}
+.footer-content-lists {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 26px;
+  color: #a2a2a2;
+}
+.footer-content-lists > b {
+  color: #fff;
+}
+.footer-top-connect {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: #a2a2a2;
+}
+.footer-top-connect-icons {
+  font-size: 24px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a2a2;
+}
+hr {
+  height: 1px;
+  border: none;
+  color: #333;
+  background-color: #333;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.arrow-up-right {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  right: 24%;
+  top: 70%;
+}
+.arrow-up-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 75%;
+  left: 7%;
+}

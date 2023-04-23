@@ -1,100 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: SF Pro Display,SF Pro Display Italic,SF Pro Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF Pro Display, SF Pro Display Italic, SF Pro Text,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.header{
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    top: 0;
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
 }
-.header-top{
-    display: flex;
-    background: #f5f6f8;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0px 20px;
-    padding: 12px 50px;
+.header-top {
+  display: flex;
+  background: #f5f6f8;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0px 20px;
+  padding: 12px 50px;
+  height: 52px;
+  font-size: 14px;
 }
-.header-top-select{
-    display: flex;
-    gap: 20px;
+.header-top-select {
+  display: flex;
+  gap: 20px;
 }
-.header-top-language{
-    display: flex;
-    border-left: 1px solid grey;
-    padding: 0px 20px;
-    gap: 10px;
-    font-weight: 550;
+.header-top-language {
+  display: flex;
+  border-left: 1px solid grey;
+  padding: 0px 20px;
+  gap: 10px;
+  font-weight: 550;
+  color: #616161;
 }
-.header-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 64px;
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
 }
-.header-bottom-logo{
-    padding: 12px 0;
-    width: 232px;
-    height: 56px;
+.header-bottom-logo {
+  padding: 12px 0;
+  width: 232px;
+  height: 56px;
 }
-.header-bottom-login{
-    display: flex;
-    gap: 10px;
-    background-color: red;
-    color: white;
-    letter-spacing: 2px;
-    padding: 18px 16px 18px 20px;
+.header-bottom-login {
+  display: flex;
+  gap: 10px;
+  background-color: red;
+  color: white;
+  letter-spacing: 2px;
+  padding: 18px 16px 18px 20px;
 }
-.header-bottom-login > div:first-child{
-    font-weight: 600;
+.header-bottom-login > div:first-child {
+  font-weight: 600;
 }
-.homepage{
-    display: flex;
-    width: 100%;
-    color: #fff;
-    margin-top: 100px;
+.homepage {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  margin-top: 100px;
 }
-.homepage-left{
-    width: 35%;
-    background-color: rgb(81, 81, 81);
-    padding: 70px 50px 50px 64px;
+.homepage-left {
+  width: 35%;
+  background-color: rgb(81, 81, 81);
+  padding: 70px 50px 50px 64px;
 }
-.homepage-left-title{
-    font-size: 30px;
-    line-height: 1.25;
-    font-weight: 300px;
+.homepage-left-title {
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 300px;
 }
-.homepage-left-menu{
-    display: flex;
-    flex-direction: column;
+.homepage-left-menu {
+  display: flex;
+  flex-direction: column;
 }
-.homepage-left-menu-list{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 25px 0;
+.homepage-left-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
 }
-.homepage-left-menu-list > i:first-child{
-font-size: 38px;
+.homepage-left-menu-list > i:first-child {
+  font-size: 38px;
 }
-.homepage-right{
-    width: 65%;
+.homepage-right {
+  width: 65%;
 }
-.homepage-left-panel{
-    border-top: 0.5px solid grey;
-    padding: 10px 0;
+.homepage-left-panel {
+  border-top: 0.5px solid grey;
+  padding: 10px 0;
 }
-.homepage-left-panel-title{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 0;
+.homepage-left-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
 }
-.homepage-left-panel-content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px 0;
+.homepage-left-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.header-top-select a {
+  text-decoration: none;
+  color: #616161;
+  transition: 0.5s linear;
+}
+.header-top-select a:hover {
+  color: red;
+}
+.header-top-language div {
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+.header-top-language div:hover {
+  opacity: 0.7;
 }

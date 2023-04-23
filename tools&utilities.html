@@ -1,68 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="tool&utilities.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-top">
-        <div class="header-top-left">
-          <div class="header-top-left-list">
-            <div>Cá nhân</div>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="header-top-left-discover">
-            <div>Khám phá:</div>
-            <div>Inspire</div>
-            <div>Priority</div>
-            <div>Private</div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="tool&utilities.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="arrow-up-left"></div>
+      <div class="arrow-up-right"></div>
+      <div class="header-top-left">
+        <div class="header-top-left-list">
+          <div>Cá nhân</div>
+          <i class="fa-solid fa-chevron-down"></i>
+          <ul id="tool-dropdown">
+            <li>Cá nhân</li>
+            <li>Doanh nghiệp</li>
+            <li>Nhà đầu tư </li>
+            <li>Về chúng tôi</li>
+            <li>Tuyển dụng</li>
+          </ul>
         </div>
-        <div class="header-top-right">
-          <div class="header-top-right-select">
-            <div>Công cụ & Tiện ích</div>
-            <div>Hỗ trợ</div>
-            <div>Liên hệ</div>
-          </div>
-          <div class="header-top-right-language">
-            <i class="fa-solid fa-earth-americas"></i>
-            <div>Tiếng Việt</div>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
+        <div class="header-top-left-discover">
+          <div>Khám phá:</div>
+          <div>Inspire</div>
+          <div>Priority</div>
+          <div>Private</div>
         </div>
       </div>
-      <div class="header-bottom">
+      <div class="header-top-right">
+        <div class="header-top-right-select">
+          <a href="./tools&utilities.html">Công cụ & Tiện ích</a>
+          <a href="./support.html">Hỗ trợ</a>
+          <a href="./contact.html">Liên hệ</a>
+        </div>
+        <div class="header-top-right-language">
+          <i class="fa-solid fa-earth-americas"></i>
+          <div>Tiếng Việt</div>
+          <i class="tool-language-dropdown-arrow fa-solid fa-chevron-down"></i>
+          <ul id="tool-language-dropdown">
+            <li>Tiếng Việt</li>
+            <li>English</li>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <a href="./homepage.html">
         <img src="IMAGE/LOGO.png" alt="" class="header-bottom-logo" />
-        <div class="header-bottom-contain">
-          <div>Bảng tính</div>
-          <div>Tỷ giá</div>
-          <div>Biểu phí và biểu mẫu</div>
-          <div>Lãi suất</div>
-          <div>Chứng thư bảo lãnh</div>
-          <div>Hóa đơn điện tử</div>
+      </a>
+      <div class="header-bottom-contain">
+        <div>Bảng tính</div>
+        <div class="spreadsheet">
+          <div class="spreadsheet-left">
+            <div class="spreadsheet-left-items active">
+              <div>Bảng tính lãi suất vay</div>
+              <i class="fa-solid fa-arrow-right show"></i>
+            </div>
+            <div class="spreadsheet-left-items">
+              <div>Bảng tính lãi suất vay</div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="spreadsheet-left-items">
+              <div>Bảng tính lãi suất vay</div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="spreadsheet-right">
+            <div class="spreadsheet-right-item active">
+              Bảng tính lãi suất vay
+            </div>
+            <div class="spreadsheet-right-items">
+              <div class="spreadsheet-right-item">
+               
+              </div>
+            </div>
+            <div class="spreadsheet-right-items">
+              <div class="spreadsheet-right-item">
+              
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header-bottom-login">
-          <div>Đăng nhập</div>
-          <i class="fa-solid fa-arrow-right"></i>
+
+        <div>Tỷ giá</div>
+        <div>Biểu phí và biểu mẫu</div>
+        <div>Lãi suất</div>
+        <div>Chứng thư bảo lãnh</div>
+        <div>Hóa đơn điện tử</div>
+      </div>
+      <div class="header-bottom-login">
+        <div>Đăng nhập</div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-title">Công cụ & Tiện ích</div>
+    </div>
+    <div class="banner-content">
+      <div class="banner-content--title">
+        Công cụ hỗ trợ tính toán, tỷ giá, biểu phí và biểu mẫu
+      </div>
+      <div class="banner-content--list">
+        <div class="banner-content--bang-tinh">
+          <div class="banner-content--bang-tinh-items">
+            <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46661_871dd366d1.svg?w=1920&q=75" alt="" />
+            <div>Bảng tính</div>
+          </div>
+          <div class="banner-content--boxs">
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Bảng tính lãi suất vay</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Hỗ trợ tính các khoản vay mua xe hay học phí
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Bảng tính quyền lợi bảo hiểm</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Hỗ trợ tính số tiền bảo hiểm chi trả và chi phí hàng năm
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Bảng tính lãi suất tiết kiệm</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Hỗ trợ tính lãi suất tiết kiệm theo số tiền gửi và kỳ hạn
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-content--ty-gia">
+          <div class="banner-content--bang-tinh-items">
+            <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46681_f669b52df7.svg?w=1920&q=75" alt="" />
+            <div>Tỷ giá</div>
+          </div>
+          <div class="banner-content--boxs">
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Tỷ giá hối đoái</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Hỗ trợ tính chuyển đổi ngoại tệ
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Quy đổi tiền tệ</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Cập nhật bảng tỷ giá mới nhất
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Tỷ giá chốt</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Tỷ giá vàng</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Cung cấp giá mua vào và bán ra vàng theo thời gian thực
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-less">
+            <div>Thu gọn</div>
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        </div>
+        <div class="banner-content--bieu-phi-va-bieu-mau">
+          <div class="banner-content--bang-tinh-items">
+            <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Group_1_fba82d138c.svg?w=1920&q=75" alt="" />
+            <div>Biểu phí và biểu mẫu</div>
+          </div>
+
+          <div class="banner-content--boxs">
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Biểu phí và biểu mẫu</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Xem và tải xuống các tài liệu về biểu phí, biểu mẫu và biểu
+                  giá
+                </div>
+              </div>
+            </div>
+            <div class="banner-content--box">
+              <div class="banner-content--box-ls-vay">
+                <div class="banner-content--box-ls-vay-title">
+                  <div>Biểu lãi suất</div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="banner-content--box-ls-vay-content">
+                  Các lãi suất hiện hành áp dụng tại ngân hàng Techcombank
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="banner">
-        <div class="banner-title">Công cụ & Tiện ích</div>
+    </div>
+    <div class="related-content">
+      <div class="related-content-title">Có thể bạn cũng quan tâm</div>
+      <div class="related-content-lists">
+        <div class="related-content-list">
+          <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46588_e476b6d4c0.svg?w=1920&q=75" alt="" />
+          <p>
+            Khám phá các kế hoạch bảo vệ bạn và những người thân yêu của bạn
+            trước những bất trắc trong cuộc sống.
+          </p>
+          <div class="see-more">
+            <div>Xem thêm Bảo Hiểm</div>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="related-content-list">
+          <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46588_e476b6d4c0.svg?w=1920&q=75" alt="" />
+          <p>
+            Techcombank cung cấp nhiều loại tài khoản phục vụ mọi nhu cầu tài
+            chính của bạn.
+          </p>
+          <div class="see-more">
+            <div>Xem thêm Tài Khoản</div>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="related-content-list">
+          <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/Frame_46588_e476b6d4c0.svg?w=1920&q=75" alt="" />
+          <p>
+            Hãy nắm bắt cơ hội sở hữu ngôi nhà mơ ước của bạn ngay hôm nay,
+            với mức lãi suất cạnh tranh của chúng tôi.
+          </p>
+          <div class="see-more">
+            <div>Xem thêm Vay</div>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
       </div>
-      <div class="banner-content"></div>
-    </main>
-  </body>
+    </div>
+    <div class="contact">
+      <div class="contact-content">
+        Bạn còn thắc mắc?
+        <br />
+        Hãy để chuyên viên tư vấn của chúng tôi hỗ trợ bạn.
+      </div>
+      <div class="contact-contact-now">
+        <div>Liên hệ ngay</div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <img src="https://d1kndcit1zrj97.cloudfront.net/uploads/fr_logo_909a5a9b8b.png?w=1200&q=75" alt="" />
+      </div>
+      <div class="footer-top-right">
+        <div>Liên kết khác</div>
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-content-lists">
+        <b>Khách hàng cá nhân</b>
+        <span>Chi tiêu</span>
+        <span>Tiết kiệm</span>
+        <span>Vay</span>
+        <span>Đầu tư</span>
+        <span>Bảo hiểm</span>
+        <span>Ngân hàng trực tuyến</span>
+        <span>Thông tin mới</span>
+      </div>
+      <div class="footer-content-lists">
+        <b>Khách hàng doanh nghiệp</b>
+        <span>Quản trị hàng ngày</span>
+        <span>Vay</span>
+        <span>Thương mại</span>
+        <span>Nguồn vốn</span>
+        <span>Bảo hiểm</span>
+        <span>Thông tin mới</span>
+      </div>
+      <div class="footer-content-lists">
+        <b>Khách hàng ưu tiên</b>
+        <span>Dịch vụ khách hàng ưu tiên</span>
+        <span>Đặc quyền vượt trội</span>
+      </div>
+      <div class="footer-content-lists">
+        <b>Nhà đầu tư</b>
+        <span>Thông tin tài chính</span>
+        <span>Đại hội đồng cổ đông</span>
+        <span>Sự kiện khác</span>
+
+        <span>Thông tin khác</span>
+      </div>
+      <div class="footer-content-lists">
+        <b>Về chúng tôi</b>
+        <span>Về Techcombank</span>
+        <span>Tin tức và báo chí</span>
+        <span>Trách nhiệm và cộng đồng</span>
+        <span>Pháp lý và tuân thủ</span>
+      </div>
+      <div class="footer-content-lists">
+        <b>Hỗ trợ & tiện ích</b>
+        <span>Tuyển dụng</span>
+        <span>Công cụ & Tiện ích</span>
+        <span>Hỗ trợ</span>
+        <span>Liên hệ</span>
+      </div>
+    </div>
+    <div class="footer-top-connect">
+      <div class="footer-top-connect-title">
+        Kết nối với Techcombank nhiều hơn tại đây
+      </div>
+      <div class="footer-top-connect-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
+    </div>
+    </div>
+    <hr />
+
+    <div class="footer-bottom">
+      <span>Bản quyền © 2023 thuộc về Ngân hàng Thương mại cổ phần Kỹ thương Việt
+        Nam</span>
+      <span>Điều khoản & Điều kiện</span>
+      <span>Quyền riêng tư dữ liệu</span>
+      <span>
+        ☎ KH Cá nhân: 1800 588 822 (trong nước) - 84 24 3944 6699 (nước
+        ngoài)</span>
+      <span>☎ KH Doanh nghiệp: 1800 6556 (trong nước) - 84 24 7303 6556 (nước
+        ngoài)</span>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="./tool.js"></script>
+</body>
+
 </html>
